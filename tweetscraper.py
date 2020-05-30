@@ -1,17 +1,18 @@
 import GetOldTweets3 as got
 import numpy as np
 
-text_query = 'angry'
+text_query = '#sadness'
 count = 3000
-file_name = 'angry3'
+file_name = 'sad'
 tweetCriteria = got.manager.TweetCriteria().setQuerySearch(text_query)\
                                            .setMaxTweets(count)\
+                                           .setUntil("2019-03-10")
 
 # Creation of list that contains all tweets
 tweets = got.manager.TweetManager.getTweets(tweetCriteria)
 # Creating list of chosen tweet data
 text_tweets = np.asarray([[tweet.text]for tweet in tweets])
-label = np.asarray([["anger"] for i in range(0, count)])
+label = np.asarray([["sadness"] for i in range(0, count)])
 text_tweets = np.append(text_tweets, label, axis=1)
 np.savetxt(f"{file_name}.csv", text_tweets, delimiter=",", fmt='%s')
 
