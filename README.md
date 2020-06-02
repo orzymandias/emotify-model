@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/orzymandias/emotify-model/blob/master/emotify.ipynb)
 
-### More about the Emotify Model...
+## About the Emotify Model...
 
 The emotify model is a non-binary classification model that uses neural networks to classify text into four different emotions (Happiness, Sadness, Anger, Worry). It is trained on tweets from the crowdflower dataset along with our tweets which we have web scraped ourselves. 
 The model will be used to predict emotion from user input which are then used to search for music in the database.
