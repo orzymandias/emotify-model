@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, request
-from utils import preprocess, EMOTION_CLASSES
+from util import preprocess, EMOTION_CLASSES
 import numpy as np
 from tensorflow import keras
-import tensorflow_hub as hub
+# import tensorflow_hub as hub
 
 app = Flask(__name__)
 # model = keras.models.load_model("tmp/.h5", custom_objects={'KerasLayer': hub.KerasLayer})
