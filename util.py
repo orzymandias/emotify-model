@@ -1,5 +1,5 @@
-from tensorflow.python.keras.preprocessing.text import tokenizer_from_json
-from tensorflow.python.keras.preprocessing import sequence
+from keras.preprocessing.text import tokenizer_from_json
+from keras.preprocessing import sequence
 import json
 
 MAX_SEQUENCE_LENGTH = 28
