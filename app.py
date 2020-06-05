@@ -23,8 +23,7 @@ def index():
         data["certainty"] = str(uncertainty)
         data["prediction"] = str(prediction[0])
         data["success"] = True
-    
     return jsonify(data)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
