@@ -1,0 +1,7 @@
+runtime: python27
+threadsafe: True
+
+entrypoint: gunicorn -w 4 app:app
+handlers:
+- url: /.*
+  script: app.app

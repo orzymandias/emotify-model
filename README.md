@@ -15,3 +15,8 @@ We settled on using tweets dataset due to its accessibility and libraries such a
 ### Model Development  (Experimental phase)
 According to the Tensorflow documentation, sepCNN with GloVe embeddings layer performed best for text classification tasks. However, the ideal results could not be replicated with validation accuracy hovering around 30%. Issues could be due to ratio of text length to dataset size falling slightly below the recommended 1500. 
 We have also experimented with transfer learning using a pre-trained embedding layer (Google News) and 2 MLP with slightly better results.
+
+
+### Dependencies
+Heroku deployment is running tf 2.0.1 due to space constaints
+Local deployment uses tf latest version 2.2.0

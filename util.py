@@ -5,10 +5,10 @@ import json
 MAX_SEQUENCE_LENGTH = 28
 
 EMOTION_CLASSES = {
-  0: "anger",
+  0:"anger",
   1:"fear",
-  2: "happiness",
-  3: "sadness"
+  2:"happiness",
+  3:"sadness"
 }
 
 
