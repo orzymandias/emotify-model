@@ -23,7 +23,7 @@ def index():
         prediction = model.predict([params["feature"]])
         emotion = np.argmax(prediction)
         uncertainty = prediction[0][emotion]
-        data["emotion"]= EMOTION_CLASSES[emotion]
+        data["emotion"]= emotion
         data["salience"] = str(uncertainty)
         data["prediction"] = str(prediction[0])
         data["emotion-classes"] = str(EMOTION_CLASSES)
