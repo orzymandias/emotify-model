@@ -11,6 +11,10 @@ The model will be used to predict emotion from user input which are then used to
 There are limited textual datasets labelled with emotions and many which are found are either context specific (e.g. product reviews, dialogs) or labelled with emotion metrics (e.g. VAD) which were not aligned with our music labels.
 We settled on using tweets dataset due to its accessibility and libraries such as tweepy which support easy web scraping. Furthermore, tweets capture an individual’s random thoughts which is plausible as input queries in our application. However, labels are subjective and the poor spelling and grammar of tweets may be disruptive to the model learning patterns.
 
+## API Endpoints
+
+* [Model](model.md) : `GET https://emotify-model.herokuapp.com/predict`
+
 
 ### Model Development  (Experimental phase)
 According to the Tensorflow documentation, sepCNN with GloVe embeddings layer performed best for text classification tasks. However, the ideal results could not be replicated with validation accuracy hovering around 30%. Issues could be due to ratio of text length to dataset size falling slightly below the recommended 1500. 
