@@ -32,7 +32,7 @@ Used to predict emotion based on feature text
 
 ```json
 {
-  "emotion": 1,
+  "emotion": 2,
   "emotion-classes": "{0: 'anger', 1: 'fear', 2: 'happiness', 3: 'sadness'}",
   "prediction": "[0.05598123 0.00394219 0.6793236  0.26075292]",
   "salience": "0.6793236",
